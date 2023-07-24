@@ -74,3 +74,16 @@ $mylavender: #ede4ff;
 .h-40 {
     height: 40%;
 }
+
+.typeanimation {
+    overflow: hidden; /* Permet de cacher le texte qui dépasse */
+    border-right: 0.1em solid #000; /* Ajoute un trait clignotant pour simuler la machine à écrire */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    margin: 0 auto; /* Centre le texte horizontalement */
+    letter-spacing: 0.13em; /* Ajoute un espacement entre les caractères */
+    animation: typing 5s steps(40) infinite;
+}
+@keyframes typing {
+    from { width: 0; } /* Débute avec une largeur de 0 */
+    to { width: 100%; } /* Augmente la largeur jusqu'à 100% */
+  }
