@@ -12,8 +12,8 @@
 
     <nav class="navbar navbar-expand-lg nanum fixed-top bg-lavende">
         <div class="container">
-            <a href="/" class="d-flex navbar-brand align-items-center nanum">
-                <img src="assets/cb3vector.svg" alt="Logo" height="30" class="d-inline-block align-text-top px-2">
+            <a href="#accueil" class="d-flex navbar-brand align-items-center nanum">
+                <img src="Images/cb3vector.svg" alt="Logo" height="30" class="d-inline-block align-text-top px-2">
                 <div>
                     <div class="size-14 hover-bold">Cindy Bajoni</div>
                     <div class="text-secondary size-12">Occitanie - Bouches-du-Rhône</div>
@@ -45,10 +45,11 @@
     </nav>
 
 
-    <article class="text-center flex-column d-flex mg-auto section align-items-center justify-content-center">
+    <article id="accueil"
+        class="text-center flex-column d-flex mg-auto section align-items-center justify-content-center">
         <h1 class="d-flex italiana display-1 fw-bold align-items-end mgh-auto">Cindy Bajoni</h1>
-        <p class="d-flex amiri align-items-start mgh-auto text-break px-5 sizing">DÉVELOPPEUSE MOBILE, iOS & FRONT-END
-            <br> JAVA / SWIFT / JAVASCRIPT
+        <p class="d-flex amiri align-items-start mgh-auto text-break px-5 sizing">DÉVELOPPEUSE iOS & FRONT-END
+            <br> SWIFT / JAVASCRIPT
         </p>
     </article>
 
@@ -79,55 +80,52 @@
             <h2 class="titreportfolio italiana fs-1">Mes projets web</h2>
             <div class="border-top border-black w-25 ms-5 pb-5"></div>
 
-
-            <div class="container d-flex gap-40">
+            <div class="slider-container">
 
                 <p class="precedent hiddenarrow"> - </p>
-                <div id=" container d-flex overflow-hidden">
+                <div id="caroussel">
 
-                    <div class="firstcaroussel gap-6">
-                        <a href="" class="conteneursite position-relative" title="Squedrong">
+                    <div class="test">
+                        <a href="" class="conteneursite" title="Squedrong">
                             <img src="images/blog.png" alt="screen squedrong blog" title="Screen du Blog de Squedrong"
-                                class="leftportfolio ratio-16x9 w-25">
+                                class="leftportfolio">
                         </a>
-                        <a href="" class="conteneursite position-relative" title="Ducsman">
+                    </div>
+                    <div class="test">
+                        <a href="" class="conteneursite" title="Ducsman">
                             <img src="images/ducsman.png" alt="screen ducsman" title="Screen du site vitrine Ducsman"
-                                class="leftportfolio ratio-16x9 w-25">
+                                class="leftportfolio">
                         </a>
-                        <a href="" class="conteneursite position-relative" title="Qriosité">
+                    </div>
+                    <div>
+                        <a href="" class="conteneursite" title="Qriosité">
                             <img src="images/qriosite.png" alt="screen qriosite"
-                                title="Screen de Qriosite - nuit de l'info" class="leftportfolio ratio-16x9 w-25">
+                                title="Screen de Qriosite - nuit de l'info" class="leftportfolio">
                         </a>
-
                     </div>
-                    <div class="secondcaroussel">
-
-                        <a href="" class="conteneursite position-relative" title="Eurovelo5">
+                    <div>
+                        <a href="" class="conteneursite" title="Eurovelo5">
                             <img src="images/eurovelo.png" alt="screen eurovelo" title="Screen du site Eurovelo5"
-                                class="leftportfolio ratio-16x9 w-25">
+                                class="leftportfolio">
                         </a>
-
-                        <a href="" class="conteneursite position-relative" title="Portfolio 1">
-                            <img src="images/portfolio1.png" alt="screen poportfolio 2"
-                                title="Screen du Portfolio final" class="leftportfolio ratio-16x9 w-25">
-                        </a>
-
-                        <a href="" class="conteneursite position-relative" title="Assur'Travel">
-                            <img src="images/assur.png" alt="screen assur travel" title="Screen de Assur Travel"
-                                class="leftportfolio ratio-16x9 w-25">
-                        </a>
-
                     </div>
-
-                    <div class="lastcaroussel">
-
-                        <a href="" class="conteneursite position-relative" title="Portfolio 2">
-                            <img src="images/portfolio2.png" alt="screen portfolio 2" title="Screen du Portfolio final"
-                                class="leftportfolio ratio-16x9 w-25">
+                    <div>
+                        <a href="" class="conteneursite" title="Portfolio 1">
+                            <img src="images/portfolio1.png" alt="screen poportfolio 2"
+                                title="Screen du Portfolio final" class="leftportfolio">
                         </a>
-
-
-
+                    </div>
+                    <div>
+                        <a href="" class="conteneursite" title="Assur'Travel">
+                            <img src="images/assur.png" alt="screen assur travel" title="Screen de Assur Travel"
+                                class="leftportfolio">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="conteneursite" title="Portfolio 2">
+                            <img src="images/portfolio2.png" alt="screen portfolio 2" title="Screen du Portfolio final"
+                                class="leftportfolio">
+                        </a>
                     </div>
                 </div>
 
@@ -143,46 +141,319 @@
         <div class="pb-50">
             <ul class="container d-flex list-unstyled gap-4 pb-1">
                 <li>
-                    <a href="" class="conteneurappli" title="Play Eat!">
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="" class="conteneurappli"
+                        title="Play Eat!">
                         <img src="images/playeat.png" alt="Screen PlayEat!" title="Play Eat!"
                             class="img-fluid w-100 rounded-4 border border-5 border-black">
                     </a>
+                    <div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content border-lavende bg-lavende">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-1 italiana" id="exampleModalLabel">Play Eat!</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex mg-auto gap-3 bg-white rounded-2">
+                                    <video class="elementA rounded-4 border border-5 border-black w-35" controls>
+
+                                        <source src="images/playeat.mp4" type="video/mp4">
+                                        <a href="images/playeat.mp4">MP4</a>
+
+                                    </video>
+                                    <div class="w-50 nanum mg-auto text-justify">
+                                        <p>Lors de ma première formation en développement, l'Apple Foundation Program,
+                                            nous avons dû développer une
+                                            application sur le thème de la cuisine. Nous avons pensé à un jeu pour faire
+                                            découvrir de nouvelles recettes
+                                            du monde avec un aspect sociale avec un système de points appelés les
+                                            "miam's", des photos à partager et un chat.
+                                            Suite à la formation, j'ai redéveloppé la totalité de l'appplication de mon
+                                            côté, dont voici le prototype.
+                                            J'ai souhaité m'inspirer du profil type de Twitter pour me challenger un
+                                            peu, vous pourrez constater les parties
+                                            ressemblantes.
+                                        </p>
+                                        <a class="btn bg-lavende mg-2" href="https://github.com/Cindoushka/PlayEat-">
+                                            <img src="Images/github.png" width="24" class="me-1">
+                                            Lien GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="" class="conteneurappli" title="Poudlard">
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal1" href="" class="conteneurappli"
+                        title="Poudlard">
                         <img src="images/poudlard.png" alt="Screen Poudlard" title="Poudlard"
                             class="img-fluid w-100 rounded-4 border border-5 border-black">
                     </a>
+                    <div class="modal fade modal-lg" id="exampleModal1" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content border-lavende bg-lavende">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-1 italiana" id="exampleModalLabel">Poudlard</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex mg-auto gap-3 bg-white rounded-2">
+                                    <video width="200" class="elementA rounded-4 border border-5 border-black" controls>
+
+                                        <source src="images/playeat.mp4" type="video/mp4">
+                                        <a href="images/playeat.mp4">MP4</a>
+
+                                    </video>
+                                    <div class="w-50 nanum mg-auto text-justify">
+                                        <p>Lors de ma première formation en développement, l'Apple Foundation Program,
+                                            nous avons dû développer une
+                                            application sur le thème de la cuisine. Nous avons pensé à un jeu pour faire
+                                            découvrir de nouvelles recettes
+                                            du monde avec un aspect sociale avec un système de points appelés les
+                                            "miam's", des photos à partager et un chat.
+                                            Suite à la formation, j'ai redéveloppé la totalité de l'appplication de mon
+                                            côté, dont voici le prototype.
+                                            J'ai souhaité m'inspirer du profil type de Twitter pour me challenger un
+                                            peu, vous pourrez constater les parties
+                                            ressemblantes.
+                                        </p>
+                                        <a class="btn bg-lavende"
+                                            href="https://github.com/Cindoushka/ExtendedExercices">
+                                            <img src="Images/github.png" width="24" class="me-1">
+                                            Lien GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="" class="conteneurappli" title="We Hobby">
-                        <img src="images/wehobby.png" alt="Screen WeHobby" title="WeHobby"
-                            class="w-100 rounded-4 border border-5 border-black">
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal2" href="" class="conteneurappli"
+                        title="We Hobby">
+                        <img src="images/wehobby.png" alt="Screen We Hobby" title="We Hobby"
+                            class="img-fluid w-100 rounded-4 border border-5 border-black">
                     </a>
+                    <div class="modal fade modal-lg" id="exampleModal2" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content border-lavende bg-lavende">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-1 italiana" id="exampleModalLabel">We Hobby</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex mg-auto gap-5 bg-white rounded-2">
+                                    <video width="200" class="elementA rounded-4 border border-5 border-black" controls>
+
+                                        <source src="images/wehobby.mp4" type="video/mp4">
+                                        <a href="images/wehobby.mp4">MP4</a>
+
+                                    </video>
+                                    <div class="w-50 nanum mg-auto text-justify">
+                                        <p>Voici le prototype de l'application créée lors de l'Apple Foundation Program
+                                            - Extended. Le thème étant les loisirs, nous avons
+                                            décidé de créer une application qui permettrait de rencontrer des personnes
+                                            qui pratiquent les mêmes loisirs grâce à des évènements
+                                            répertoriés; mais également et surtout de découvrir de nouveaux loisirs à
+                                            travers un système de swipe ou à travers une liste.
+                                            Chacun de ces loisirs y sont détaillés et on peut y retrouver des tutos
+                                            créés par la communautés, des interractions, des conseils
+                                            d'autres utilisateurs et une galerie photo. Il y a également un système de
+                                            chat, et des profils utilisateurs assez simples et complets.
+                                        </p>
+                                        <a class="btn bg-lavende" href="https://github.com/Cindoushka/WeHobby">
+                                            <img src="Images/github.png" width="24" class="me-1">
+                                            Lien GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="" class="conteneurappli" title="Portfolio">
-                        <img src="images/cv.png" alt="Screen CV" title="Screen CV"
-                            class="w-100 rounded-4 border border-5 border-black">
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal3" href="" class="conteneurappli"
+                        title="Instagram">
+                        <img src="images/instagram.png" alt="Screen Instagram" title="Instagram"
+                            class="img-fluid w-100 rounded-4 border border-5 border-black">
                     </a>
+                    <div class="modal fade modal-lg" id="exampleModal3" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content border-lavende bg-lavende">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-1 italiana" id="exampleModalLabel">Instagram Clone</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex mg-auto gap-3 bg-white rounded-2">
+                                    <video width="200" class="elementA rounded-4 border border-5 border-black" controls>
+
+                                        <source src="images/insta.mp4" type="video/mp4">
+                                        <a href="images/insta.mp4">MP4</a>
+
+                                    </video>
+                                    <div class="w-50 nanum mg-auto text-justify">
+                                        <p>Lors de ma première formation en développement, l'Apple Foundation Program,
+                                            nous avons dû développer une
+                                            application sur le thème de la cuisine. Nous avons pensé à un jeu pour faire
+                                            découvrir de nouvelles recettes
+                                            du monde avec un aspect sociale avec un système de points appelés les
+                                            "miam's", des photos à partager et un chat.
+                                            Suite à la formation, j'ai redéveloppé la totalité de l'appplication de mon
+                                            côté, dont voici le prototype.
+                                            J'ai souhaité m'inspirer du profil type de Twitter pour me challenger un
+                                            peu, vous pourrez constater les parties
+                                            ressemblantes.
+                                        </p>
+                                        <a class="btn bg-lavende" href="https://github.com/Cindoushka/Instagram">
+                                            <img src="Images/github.png" width="24" class="me-1">
+                                            Lien GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="" class="conteneurappli" title="Insta gram">
-                        <img src="images/instagram.png" alt="Screen Instagram" title="Instagram Clone"
-                            class="w-100 rounded-4 border border-5 border-black">
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal4" href="" class="conteneurappli"
+                        title="Portfolio">
+                        <img src="images/cv.png" alt="Screen Portfolio" title="Portfolio"
+                            class="img-fluid w-100 rounded-4 border border-5 border-black">
                     </a>
+                    <div class="modal fade modal-lg" id="exampleModal4" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content border-lavende bg-lavende">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-1 italiana" id="exampleModalLabel">Portfolio</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex mg-auto gap-3 bg-white rounded-2">
+                                    <video width="200" class="elementA rounded-4 border border-5 border-black" controls>
+
+                                        <source src="images/insta.mp4" type="video/mp4">
+                                        <a href="images/insta.mp4">MP4</a>
+
+                                    </video>
+                                    <div class="w-50 nanum mg-auto text-justify">
+                                        <p>Lors de ma première formation en développement, l'Apple Foundation Program,
+                                            nous avons dû développer une
+                                            application sur le thème de la cuisine. Nous avons pensé à un jeu pour faire
+                                            découvrir de nouvelles recettes
+                                            du monde avec un aspect sociale avec un système de points appelés les
+                                            "miam's", des photos à partager et un chat.
+                                            Suite à la formation, j'ai redéveloppé la totalité de l'appplication de mon
+                                            côté, dont voici le prototype.
+                                            J'ai souhaité m'inspirer du profil type de Twitter pour me challenger un
+                                            peu, vous pourrez constater les parties
+                                            ressemblantes.
+                                        </p>
+                                        <a class="btn bg-lavende" href="https://github.com/Cindoushka/Portfolio-Swift">
+                                            <img src="Images/github.png" width="24" class="me-1">
+                                            Lien GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="" class="conteneurappli" title="Classe ments">
-                        <img src="images/classement.png" alt="Screen Classement" title="Classement"
-                            class="w-100 rounded-4 border border-5 border-black">
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal5" href="" class="conteneurappli"
+                        title="Classe ments">
+                        <img src="images/classement.png" alt="Screen Classements" title="Classements"
+                            class="img-fluid w-100 rounded-4 border border-5 border-black">
                     </a>
+                    <div class="modal fade modal-lg" id="exampleModal5" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content border-lavende bg-lavende">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-1 italiana" id="exampleModalLabel">Jeu de Classements</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex mg-auto gap-3 bg-white rounded-2">
+                                    <video width="200" class="elementA rounded-4 border border-5 border-black" controls>
+
+                                        <source src="images/playeat.mp4" type="video/mp4">
+                                        <a href="images/playeat.mp4">MP4</a>
+
+                                    </video>
+                                    <div class="w-50 nanum mg-auto text-justify">
+                                        <p>Lors de ma première formation en développement, l'Apple Foundation Program,
+                                            nous avons dû développer une
+                                            application sur le thème de la cuisine. Nous avons pensé à un jeu pour faire
+                                            découvrir de nouvelles recettes
+                                            du monde avec un aspect sociale avec un système de points appelés les
+                                            "miam's", des photos à partager et un chat.
+                                            Suite à la formation, j'ai redéveloppé la totalité de l'appplication de mon
+                                            côté, dont voici le prototype.
+                                            J'ai souhaité m'inspirer du profil type de Twitter pour me challenger un
+                                            peu, vous pourrez constater les parties
+                                            ressemblantes.
+                                        </p>
+                                        <a class="btn bg-lavende" href="https://github.com/Cindoushka/BdayGame">
+                                            <img src="Images/github.png" width="24" class="me-1">
+                                            Lien GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="" class="conteneurappli" title="Drunk Party">
-                        <img src="images/drunk-party.png" alt="Screen Drunk Party" title="Drunk Party"
-                            class="w-100 rounded-4 border border-5 border-black">
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal6" href="" class="conteneurappli"
+                        title="Drunk Party">
+                        <img src="images/drunk-party.png" alt="Screen Drunk Party!" title="Drunk Party"
+                            class="img-fluid w-100 rounded-4 border border-5 border-black">
                     </a>
+                    <div class="modal fade modal-lg" id="exampleModal6" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content border-lavende bg-lavende">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-1 italiana" id="exampleModalLabel">Drunk Party</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex mg-auto gap-3 bg-white rounded-2">
+                                    <video width="200" class="elementA rounded-4 border border-5 border-black" controls>
+
+                                        <source src="images/drunkparty.mp4" type="video/mp4">
+                                        <a href="images/drunkparty.mp4">MP4</a>
+
+                                    </video>
+                                    <div class="w-50 nanum mg-auto text-justify">
+                                        <p>Lors de ma première formation en développement, l'Apple Foundation Program,
+                                            nous avons dû développer une
+                                            application sur le thème de la cuisine. Nous avons pensé à un jeu pour faire
+                                            découvrir de nouvelles recettes
+                                            du monde avec un aspect sociale avec un système de points appelés les
+                                            "miam's", des photos à partager et un chat.
+                                            Suite à la formation, j'ai redéveloppé la totalité de l'appplication de mon
+                                            côté, dont voici le prototype.
+                                            J'ai souhaité m'inspirer du profil type de Twitter pour me challenger un
+                                            peu, vous pourrez constater les parties
+                                            ressemblantes.
+                                        </p>
+                                        <a class="btn bg-lavende" href="https://github.com/Cindoushka/DrunkParty">
+                                            <img src="Images/github.png" width="24" class="me-1">
+                                            Lien GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -209,7 +480,7 @@
                     <p>Après près de 10 ans en tant que <strong>conseillère commerciale</strong>, j'ai découvert le
                         <strong>développemment iOS</strong>,
                         devenu une vraie passion. J'ai également découvert le <strong>développement web</strong>
-                        avec HTML, CSS et JavaScript.
+                        avec HTML, CSS et JavaScript. Ainsi que SvelteJS lors de mon stage de fin de formation.
                     </p>
 
                     <p>Je suis une personne <strong>très sociable, dynamique et motivée.</strong> J'ai toujours à
@@ -236,6 +507,7 @@
             <img src="images/html5.png" alt="logo html" title="HTML5" height=40>
             <img src="images/css.png" alt="logo css" title="CSS" height=40>
             <img src="images/js.png" alt="logo javascript" title="JavaScript" height=40>
+            <img src="images/Svelte_Logo.svg.png" alt="logo svelte js" title="SvelteJS" height=40>
             <img src="images/figma.png" alt="logo figma" title="Figma" height=40>
             <img src="images/england.png" alt="drapeau anglais" title="Anglais" height=40 class="rounded-2">
             <img src="images/italia.png" alt="drapeau italien" title="Italien" height=40 class="rounded-2">

@@ -8,6 +8,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
 
+@import "layout/caroussel";
+
+@import "layout/appli";
+
+
 $mylavender: #ede4ff;
 
 .bg-lavende {
@@ -71,6 +76,13 @@ $mylavender: #ede4ff;
     width: 40%;
 }
 
+.w-20 {
+    width: 20%;
+}
+.w-35 {
+    width: 30%;
+}
+
 .h-40 {
     height: 40%;
 }
@@ -87,3 +99,11 @@ $mylavender: #ede4ff;
     from { width: 0; } /* Débute avec une largeur de 0 */
     to { width: 100%; } /* Augmente la largeur jusqu'à 100% */
   }
+
+.text-justify {
+    text-align: justify;
+}
+
+.border-lavende {
+    border: 10px $mylavender solid;
+}
